@@ -14,3 +14,7 @@ instance/
 # Configurações do VS Code
 .vscode/
 
+
+# Ambiente virtual do Python (cada pessoa cria o seu localmente)
+venv/
+.venv/

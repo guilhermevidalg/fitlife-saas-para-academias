@@ -1,5 +1,7 @@
 # 🏋️ FitLife — Sistema SaaS de Gestão de Treinos em Academias
 
+🌐 **Aplicação no ar:** [fitlife-saas-analytics.onrender.com](https://fitlife-saas-analytics.onrender.com)
+
 O **FitLife** é um sistema SaaS full-stack desenvolvido em **Python** e **Flask** para gerenciamento completo de academias, alunos, instrutores e prescrição de treinos. 
 
 O projeto foi construído focando em boas práticas de **Engenharia de Software**, **Design Patterns (GoF)**, **Métricas de Produto/Dados (SaaS Analytics)**, **Testes Automatizados** e arquitetura de **API RESTful**.
@@ -44,8 +46,11 @@ O projeto foi construído focando em boas práticas de **Engenharia de Software*
 Bateria de testes unitários desenvolvida com **PyTest** para validação das regras de negócio do Padrão State e integridade do Builder:
 
 ```bash
-# Executar a suíte de testes
-py -m pytest 
+# Mac/Linux
+python3 -m pytest
+
+# Windows
+py -m pytest
 ```
 
 ---
@@ -69,31 +74,49 @@ py -m pytest
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/guilhermevidalg/fitlife-saas-analytics.git](https://github.com/guilhermevidalg/fitlife-saas-analytics.git)
-   cd fitlife-saas-analytics
-Instale as dependências:
+### 1. Clone o repositório
 
-Bash
-py -m pip install flask flask_sqlalchemy pytest
-Execute a aplicação:
+```bash
+git clone https://github.com/guilhermevidalg/fitlife-saas-analytics.git
+cd fitlife-saas-analytics
+```
 
-Bash
-py app.py
-Acesse no navegador:
+### 2. Crie e ative um ambiente virtual
 
-http://127.0.0.1:5000
+**Mac/Linux:**
 
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
----
-
-### **Passos finais para atualizar no GitHub:**
-
-1. Salve o arquivo no VS Code (`Ctrl + S`).
-2. Digite os 3 comandos no terminal:
+**Windows (PowerShell):**
 
 ```powershell
-git add README.md
-git commit -m "docs: ajusta formatacao final dos passos de execucao"
-git push
+py -m venv venv
+venv\Scripts\Activate.ps1
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Execute a aplicação
+
+**Mac/Linux:**
+
+```bash
+python3 app.py
+```
+
+**Windows:**
+
+```powershell
+py app.py
+```
+
+### 5. Acesse no navegador
+
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
