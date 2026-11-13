@@ -2,6 +2,8 @@
 
 🌐 **Aplicação no ar:** [fitlife-saas-analytics.onrender.com](https://fitlife-saas-analytics.onrender.com)
 
+> ⏳ **Observação:** o deploy está no plano gratuito do Render, que hiberna a aplicação após um período sem uso. Por isso, o primeiro acesso pode demorar cerca de 1 minuto para carregar.
+
 O **FitLife** é um sistema SaaS full-stack desenvolvido em **Python** e **Flask** para gerenciamento completo de academias, alunos, instrutores e prescrição de treinos. 
 
 O projeto foi construído focando em boas práticas de **Engenharia de Software**, **Design Patterns (GoF)**, **Métricas de Produto/Dados (SaaS Analytics)**, **Testes Automatizados** e arquitetura de **API RESTful**.
@@ -77,8 +79,8 @@ py -m pytest
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/guilhermevidalg/fitlife-saas-analytics.git
-cd fitlife-saas-analytics
+git clone https://github.com/guilhermevidalg/fitlife-saas-para-academias.git
+cd fitlife-saas-para-academias
 ```
 
 ### 2. Crie e ative um ambiente virtual
